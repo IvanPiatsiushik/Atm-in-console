@@ -25,7 +25,7 @@ public class CreateUser {
         System.out.println("Введите пароль");
         int password = scanner.nextInt();
         System.out.println("Введите данные карты ");
-        String numberCard = scanner.nextLine();
+        String numberCard = scanner.next();
         System.out.println("Введите сумму на карте");
         int money = scanner.nextInt();
         preparedStatement.setString(1,name);
