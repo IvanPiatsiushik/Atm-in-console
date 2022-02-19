@@ -23,13 +23,13 @@ public class CreateUser {
         System.out.println("Введите ваше имя");
         String name = scanner.nextLine();
         System.out.println("Введите пароль");
-        String password = scanner.nextLine();
+        int password = scanner.nextInt();
         System.out.println("Введите данные карты ");
         String numberCard = scanner.nextLine();
         System.out.println("Введите сумму на карте");
         int money = scanner.nextInt();
         preparedStatement.setString(1,name);
-        preparedStatement.setString(2,password);
+        preparedStatement.setInt(2,password);
         preparedStatement.setString(3,numberCard);
         preparedStatement.setInt(4,money);
         preparedStatement.execute();
